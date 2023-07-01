@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarun Fitness</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        /* margin: 0px; */
+        /* padding: 0px; */
+        background: url("img/back.jpg") no-repeat center center/cover;
+        color: white;
+    }
+
+    .left {
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 30px;
+    }
+
+    .mid {
+        /* border: 2px solid rgb(114, 202, 92); */
+        width: 33%;
+        display: block;
+        margin: 10px auto;
+    }
+
+    .right {
+        /* border: 2px solid rgb(38, 0, 255); */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 30px;
+    }
+
+    .navbar {
+        display: inline-block;
+        /* margin: auto; */
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: rgb(245, 16, 16);
+        text-decoration: none;
+        padding: 20px 25px;
+        font-size: 18px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(87, 228, 31);
+    }
+
+    .left img {
+        width: 141px;
+        height: 92px;
+        /* filter: invert(100%); */
+    }
+
+    .left div {
+        text-align: center;
+        color: black;
+    }
+
+    .btn {
+        padding: 5px 18px;
+        margin: 10px 10px;
+        border: 2px solid white;
+        background-color: rgb(67, 154, 224);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .container {
+        border: 2px solid rgb(38, 0, 255);
+        margin: 130px 61px;
+        padding: 11px 39px;
+        border-radius: 10px;
+        width: 30%;
+        color: black;
+    }
+
+    .form-group input {
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        display: block;
+        border: 3px solid black;
+        border-radius: 20px;
+        font-size: 19px;
+        margin: 3px auto;
+        padding: 5px;
+        width: 53%;
+
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .container button {
+        margin: auto;
+        display: block;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="img/logo.jpg" alt="">
+            <div>Tarun Fitness</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Fitness calculator</a></li>
+            </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us Now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Goa</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
